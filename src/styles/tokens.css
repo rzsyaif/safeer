@@ -1,0 +1,57 @@
+/* Design tokens — from DESIGN.md (Prayer & Quran Companion). Dark-first, one teal hue. */
+:root {
+  --bg-base: #003231;
+  --surface-deep: #062424;
+  --surface-deep-footer: #041e1d;
+  --surface-tile: #0d3f3e;
+  --surface-raised: #0f3d3b;
+  --surface-tonal: #1b4748;
+  --control-neutral: #284241;
+  --chip: #274f4e;
+  --icon-button: #042627;
+
+  --border-subtle: #214042;
+  --border-tonal: #234f50;
+  --border-strong: #f2ffff;
+
+  --text-primary: #ffffff;
+  --text-secondary: #c3d6da;
+  --text-muted: #a6b5b8;
+  --text-inactive: #a6c1c8;
+
+  --accent-yellow: #e0d45e;
+  --accent-green: #64ab6f;
+  --accent-teal-fade: #264b5b;
+  --info-banner: #0b1c84;
+  --status-live: #11674c;
+  --badge-alert: #fa2e37;
+  --glass-nav: rgba(245, 249, 248, 0.9);
+  --nav-active: #9fe8ec;
+
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 28px;
+  --r-full: 999px;
+
+  --s-xs: 4px;
+  --s-sm: 8px;
+  --s-md: 12px;
+  --s-lg: 16px;
+  --s-xl: 24px;
+  --s-2xl: 32px;
+
+  /* Text settings — driven by the user's preferences (lib/settings.tsx) */
+  --ui-scale: 1;
+  --arabic-size: 30px;
+  --tap: 48px;
+
+  --font-ui: 'Outfit', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-arabic: 'Amiri', 'Scheherazade New', 'Noto Naskh Arabic', serif;
+
+  color-scheme: dark;
+}
+
+:root[data-big-simple='true'] {
+  --tap: 56px;
+  --text-muted: #c3d6da; /* raise contrast for elderly readers */
+}
